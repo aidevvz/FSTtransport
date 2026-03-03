@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FST – Ihr Umzugsunternehmen | Möbeltransport, Umzüge & Klaviertransporte</title>
+    <meta name="description" content="FST – Professionelle Umzüge, Möbeltransporte, Klaviertransporte und Sperrgutentsorgung. Zuverlässig, sorgfältig und termingerecht. Jetzt kostenloses Angebot anfordern!">
+    <meta name="keywords" content="Umzug, Umzugsunternehmen, Möbeltransport, Klaviertransport, Sperrgutentsorgung, Umzugshilfe, Möbelspedition, FST">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="FST Transporte">
+    <link rel="canonical" href="https://www.fst-transporte.de/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="FST – Ihr zuverlässiges Umzugsunternehmen">
+    <meta property="og:description" content="Professionelle Umzüge, Möbeltransporte & Klaviertransporte. Jetzt kostenloses Angebot anfordern.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.fst-transporte.de/">
+    <meta property="og:locale" content="de_DE">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MovingCompany",
+        "name": "FST Transporte",
+        "description": "Professionelles Umzugsunternehmen für Möbeltransporte, Umzüge, Klaviertransporte und Sperrgutentsorgung.",
+        "url": "https://www.fst-transporte.de",
+        "telephone": "+49-XXX-XXXXXXX",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "DE"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Transportdienstleistungen",
+            "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Privatumzüge" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Firmenumzüge" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Klaviertransporte" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sperrgutentsorgung" } }
+            ]
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "187"
+        }
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --color-bg: #FAF7F2;
+            --color-surface: #FFFFFF;
+            --color-primary: #2C3E2D;
+            --color-primary-light: #3D5A3E;
+            --color-accent: #C8A96E;
+            --color-accent-light: #E8D5AB;
+            --color-text: #1A1A1A;
+            --color-text-muted: #6B6B6B;
+            --color-text-light: #999999;
+            --color-border: #E8E2D9;
+            --font-display: 'DM Serif Display', Georgia, serif;
+            --font-body: 'Manrope', system-ui, sans-serif;
+            --radius: 12px;
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+            --shadow-md: 0 8px 30px rgba(0,0,0,0.06);
+            --shadow-lg: 0 20px 60px rgba(0,0,0,0.08);
+            --transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        html { scroll-behavior: smooth; font-size: 16px; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── NAV ── */
+        .nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            padding: 1rem 2rem;
+            transition: var(--transition);
+            background: transparent;
+        }
+        .nav.scrolled {
+            background: rgba(250, 247, 242, 0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 1px 20px rgba(0,0,0,0.06);
+        }
+        .nav-inner {
+            max-width: 1240px; margin: 0 auto;
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        .nav-logo {
+            font-family: var(--font-display);
+            font-size: 1.8rem; color: #fff;
+            text-decoration: none; letter-spacing: 2px;
+            transition: var(--transition);
+        }
+        .nav.scrolled .nav-logo { color: var(--color-primary); }
+        .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+        .nav-links a {
+            text-decoration: none; color: rgba(255,255,255,0.85);
+            font-size: 0.9rem; font-weight: 500; letter-spacing: 0.3px;
+            transition: var(--transition); position: relative;
+        }
+        .nav.scrolled .nav-links a { color: var(--color-text-muted); }
+        .nav-links a:hover { color: var(--color-accent); }
+        .nav-links a::after {
+            content: ''; position: absolute; bottom: -4px; left: 0;
+            width: 0; height: 2px; background: var(--color-accent);
+            transition: var(--transition);
+        }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-cta {
+            background: var(--color-accent) !important; color: #fff !important;
+            padding: 0.6rem 1.4rem; border-radius: 50px;
+            font-weight: 600; font-size: 0.85rem;
+        }
+        .nav-cta::after { display: none !important; }
+        .nav-cta:hover { background: var(--color-primary) !important; }
+
+        .hamburger {
+            display: none; flex-direction: column; gap: 5px;
+            cursor: pointer; background: none; border: none; padding: 4px;
+        }
+        .hamburger span {
+            width: 26px; height: 2px; background: #fff;
+            transition: var(--transition); border-radius: 2px;
+        }
+        .nav.scrolled .hamburger span { background: var(--color-primary); }
+
+        /* ── HERO ── */
+        .hero {
+            min-height: 100vh; display: flex; align-items: center; justify-content: center;
+            position: relative; overflow: hidden;
+            background: linear-gradient(135deg, #2C3E2D 0%, #1a2a1b 50%, #3D5A3E 100%);
+        }
+        .hero::before {
+            content: ''; position: absolute; inset: 0;
+            background:
+                radial-gradient(ellipse at 20% 80%, rgba(200,169,110,0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(61,90,62,0.3) 0%, transparent 50%);
+        }
+        .hero-pattern {
+            position: absolute; inset: 0; opacity: 0.04;
+            background-image: repeating-linear-gradient(
+                45deg, transparent, transparent 40px, rgba(255,255,255,0.5) 40px, rgba(255,255,255,0.5) 41px
+            );
+        }
+        .hero-content {
+            position: relative; z-index: 2;
+            max-width: 900px; padding: 2rem;
+            text-align: center;
+        }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: rgba(200,169,110,0.15); border: 1px solid rgba(200,169,110,0.3);
+            padding: 0.5rem 1.2rem; border-radius: 50px;
+            font-size: 0.8rem; font-weight: 600; color: var(--color-accent-light);
+            letter-spacing: 1.5px; text-transform: uppercase;
+            margin-bottom: 2rem;
+            animation: fadeInDown 0.8s ease-out;
+        }
+        .hero-badge svg { width: 16px; height: 16px; }
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.8rem, 6vw, 4.8rem);
+            color: #fff; line-height: 1.15;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.8s ease-out 0.1s both;
+        }
+        .hero h1 .accent { color: var(--color-accent); }
+        .hero p {
+            font-size: clamp(1rem, 1.8vw, 1.2rem);
+            color: rgba(255,255,255,0.7); max-width: 600px;
+            margin: 0 auto 2.5rem; line-height: 1.8; font-weight: 300;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+        .hero-actions {
+            display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease-out 0.3s both;
+        }
+
+        .btn {
+            display: inline-flex; align-items: center; gap: 0.6rem;
+            padding: 1rem 2rem; border-radius: 50px;
+            font-family: var(--font-body); font-size: 0.95rem; font-weight: 600;
+            text-decoration: none; cursor: pointer; border: none;
+            transition: var(--transition); letter-spacing: 0.3px;
+        }
+        .btn-primary {
+            background: var(--color-accent); color: #fff;
+            box-shadow: 0 4px 20px rgba(200,169,110,0.3);
+        }
+        .btn-primary:hover {
+            background: #b8993e; transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(200,169,110,0.4);
+        }
+        .btn-outline {
+            background: transparent; color: #fff;
+            border: 1.5px solid rgba(255,255,255,0.3);
+        }
+        .btn-outline:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,255,255,0.6);
+        }
+        .btn svg { width: 18px; height: 18px; }
+
+        .hero-stats {
+            display: flex; justify-content: center; gap: 3rem;
+            margin-top: 4rem; padding-top: 3rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            animation: fadeInUp 0.8s ease-out 0.5s both;
+        }
+        .hero-stat-number {
+            font-family: var(--font-display); font-size: 2.2rem;
+            color: var(--color-accent);
+        }
+        .hero-stat-label {
+            font-size: 0.8rem; color: rgba(255,255,255,0.5);
+            text-transform: uppercase; letter-spacing: 1px; margin-top: 0.25rem;
+        }
+
+        /* ── SECTIONS ── */
+        section { padding: 6rem 2rem; }
+        .section-inner { max-width: 1200px; margin: 0 auto; }
+        .section-label {
+            font-size: 0.75rem; font-weight: 700; letter-spacing: 2.5px;
+            text-transform: uppercase; color: var(--color-accent);
+            margin-bottom: 1rem;
+        }
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem); color: var(--color-primary);
+            margin-bottom: 1rem; line-height: 1.2;
+        }
+        .section-subtitle {
+            font-size: 1.05rem; color: var(--color-text-muted);
+            max-width: 560px; line-height: 1.8;
+        }
+        .section-header { margin-bottom: 3.5rem; }
+
+        /* ── SERVICES ── */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .service-card {
+            background: var(--color-surface);
+            border-radius: var(--radius); padding: 2.5rem 2rem;
+            border: 1px solid var(--color-border);
+            transition: var(--transition); position: relative; overflow: hidden;
+        }
+        .service-card::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0;
+            height: 3px; background: var(--color-accent);
+            transform: scaleX(0); transition: var(--transition);
+            transform-origin: left;
+        }
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: transparent;
+        }
+        .service-card:hover::before { transform: scaleX(1); }
+        .service-icon {
+            width: 56px; height: 56px; border-radius: 14px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+        .service-icon svg { width: 26px; height: 26px; color: var(--color-accent-light); }
+        .service-card h3 {
+            font-family: var(--font-display); font-size: 1.35rem;
+            color: var(--color-primary); margin-bottom: 0.75rem;
+        }
+        .service-card p {
+            font-size: 0.92rem; color: var(--color-text-muted); line-height: 1.7;
+        }
+
+        /* ── WHY US ── */
+        .why-section { background: var(--color-primary); color: #fff; }
+        .why-section .section-label { color: var(--color-accent-light); }
+        .why-section .section-title { color: #fff; }
+        .why-section .section-subtitle { color: rgba(255,255,255,0.6); }
+        .why-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+        }
+        .why-item {
+            padding: 2rem; border-radius: var(--radius);
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            transition: var(--transition);
+        }
+        .why-item:hover { background: rgba(255,255,255,0.08); transform: translateY(-4px); }
+        .why-number {
+            font-family: var(--font-display); font-size: 2.5rem;
+            color: var(--color-accent); line-height: 1; margin-bottom: 1rem;
+        }
+        .why-item h3 {
+            font-size: 1.05rem; font-weight: 700; margin-bottom: 0.5rem;
+            letter-spacing: 0.3px;
+        }
+        .why-item p {
+            font-size: 0.88rem; color: rgba(255,255,255,0.55); line-height: 1.7;
+        }
+
+        /* ── PROCESS ── */
+        .process-steps {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 2rem; position: relative;
+        }
+        .process-step { text-align: center; position: relative; }
+        .step-number {
+            width: 64px; height: 64px; border-radius: 50%;
+            background: var(--color-primary); color: var(--color-accent-light);
+            font-family: var(--font-display); font-size: 1.5rem;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 4px 20px rgba(44,62,45,0.2);
+        }
+        .process-step h3 {
+            font-family: var(--font-display); font-size: 1.2rem;
+            color: var(--color-primary); margin-bottom: 0.5rem;
+        }
+        .process-step p {
+            font-size: 0.9rem; color: var(--color-text-muted);
+            max-width: 260px; margin: 0 auto;
+        }
+
+        /* ── TESTIMONIALS ── */
+        .testimonials-section { background: linear-gradient(180deg, var(--color-bg) 0%, #F3EDE3 100%); }
+        .testimonial-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+        .testimonial-card {
+            background: var(--color-surface); border-radius: var(--radius);
+            padding: 2.5rem; border: 1px solid var(--color-border);
+            position: relative;
+        }
+        .testimonial-stars {
+            display: flex; gap: 3px; margin-bottom: 1.2rem;
+        }
+        .testimonial-stars svg { width: 18px; height: 18px; fill: var(--color-accent); }
+        .testimonial-card blockquote {
+            font-size: 0.95rem; color: var(--color-text);
+            line-height: 1.8; font-style: italic; margin-bottom: 1.5rem;
+        }
+        .testimonial-author { display: flex; align-items: center; gap: 1rem; }
+        .testimonial-avatar {
+            width: 44px; height: 44px; border-radius: 50%;
+            background: var(--color-primary); color: var(--color-accent-light);
+            display: flex; align-items: center; justify-content: center;
+            font-family: var(--font-display); font-size: 1.1rem;
+        }
+        .testimonial-name { font-weight: 700; font-size: 0.9rem; }
+        .testimonial-detail { font-size: 0.8rem; color: var(--color-text-light); }
+
+        /* ── CTA ── */
+        .cta-section {
+            background: linear-gradient(135deg, var(--color-primary) 0%, #1a2a1b 100%);
+            text-align: center; position: relative; overflow: hidden;
+        }
+        .cta-section::before {
+            content: ''; position: absolute; inset: 0;
+            background: radial-gradient(ellipse at 50% 100%, rgba(200,169,110,0.12) 0%, transparent 60%);
+        }
+        .cta-section .section-inner { position: relative; z-index: 1; }
+        .cta-section h2 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            color: #fff; margin-bottom: 1rem;
+        }
+        .cta-section p {
+            color: rgba(255,255,255,0.6); font-size: 1.1rem;
+            max-width: 500px; margin: 0 auto 2.5rem;
+        }
+        .cta-contact-row {
+            display: flex; gap: 2rem; justify-content: center;
+            flex-wrap: wrap; margin-top: 3rem;
+        }
+        .cta-contact-item {
+            display: flex; align-items: center; gap: 0.75rem;
+            color: rgba(255,255,255,0.7); font-size: 0.95rem;
+        }
+        .cta-contact-item svg { width: 20px; height: 20px; color: var(--color-accent); }
+
+        /* ── FOOTER ── */
+        footer {
+            background: #111; color: rgba(255,255,255,0.5);
+            padding: 4rem 2rem 2rem;
+        }
+        .footer-inner {
+            max-width: 1200px; margin: 0 auto;
+            display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+        }
+        .footer-brand .nav-logo { color: #fff; display: inline-block; margin-bottom: 1rem; }
+        .footer-brand p { font-size: 0.88rem; line-height: 1.7; max-width: 280px; }
+        footer h4 {
+            color: #fff; font-size: 0.85rem; font-weight: 700;
+            letter-spacing: 1px; text-transform: uppercase;
+            margin-bottom: 1.2rem;
+        }
+        footer ul { list-style: none; }
+        footer ul li { margin-bottom: 0.6rem; }
+        footer ul a {
+            color: rgba(255,255,255,0.5); text-decoration: none;
+            font-size: 0.88rem; transition: var(--transition);
+        }
+        footer ul a:hover { color: var(--color-accent); }
+        .footer-bottom {
+            max-width: 1200px; margin: 3rem auto 0;
+            padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08);
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 0.8rem; flex-wrap: wrap; gap: 1rem;
+        }
+        .footer-bottom a { color: rgba(255,255,255,0.4); text-decoration: none; }
+        .footer-bottom a:hover { color: var(--color-accent); }
+
+        /* ── ANIMATIONS ── */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .reveal {
+            opacity: 0; transform: translateY(40px);
+            transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 900px) {
+            .footer-inner { grid-template-columns: 1fr 1fr; }
+            .hero-stats { gap: 1.5rem; }
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+            .nav-links.active {
+                display: flex; flex-direction: column;
+                position: absolute; top: 100%; left: 0; right: 0;
+                background: var(--color-surface); padding: 2rem;
+                box-shadow: var(--shadow-lg); gap: 1rem;
+            }
+            .nav-links.active a { color: var(--color-text) !important; }
+            .hero-stats { flex-direction: column; gap: 1.5rem; align-items: center; }
+            .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+            .cta-contact-row { flex-direction: column; align-items: center; }
+            section { padding: 4rem 1.25rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="navbar" role="navigation" aria-label="Hauptnavigation">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo" aria-label="FST Startseite">FST</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#leistungen">Leistungen</a></li>
+                <li><a href="#warum-wir">Über uns</a></li>
+                <li><a href="#ablauf">Ablauf</a></li>
+                <li><a href="#bewertungen">Bewertungen</a></li>
+                <li><a href="#kontakt" class="nav-cta">Angebot anfordern</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" id="home">
+        <div class="hero-pattern"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                Ihr Partner für stressfreie Umzüge
+            </div>
+            <h1>Wir bewegen, was Ihnen <span class="accent">wichtig ist.</span></h1>
+            <p>Professionelle Umzüge, Möbeltransporte und Sperrgutentsorgung – mit Sorgfalt, Pünktlichkeit und einem Lächeln. Seit Jahren Ihr zuverlässiger Partner.</p>
+            <div class="hero-actions">
+                <a href="#kontakt" class="btn btn-primary">
+                    Kostenloses Angebot
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#leistungen" class="btn btn-outline">
+                    Unsere Leistungen
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div>
+                    <div class="hero-stat-number">2.500+</div>
+                    <div class="hero-stat-label">Erfolgreiche Umzüge</div>
+                </div>
+                <div>
+                    <div class="hero-stat-number">4.9 ★</div>
+                    <div class="hero-stat-label">Kundenbewertung</div>
+                </div>
+                <div>
+                    <div class="hero-stat-number">100%</div>
+                    <div class="hero-stat-label">Versichert</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Leistungen / Services -->
+    <section id="leistungen" aria-labelledby="services-heading">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <p class="section-label">Unsere Leistungen</p>
+                <h2 class="section-title" id="services-heading">Alles aus einer Hand</h2>
+                <p class="section-subtitle">Von der Einzellieferung bis zum kompletten Firmenumzug – wir kümmern uns um jedes Detail.</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <h3>Privatumzüge</h3>
+                    <p>Ob Einzimmerwohnung oder großes Haus – wir planen und führen Ihren Umzug komplett durch. Inklusive Verpackung, Transport und Aufbau.</p>
+                </article>
+                <article class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    </div>
+                    <h3>Firmenumzüge</h3>
+                    <p>Minimale Ausfallzeiten, maximale Effizienz. Wir organisieren Ihren Büroumzug professionell – auch am Wochenende.</p>
+                </article>
+                <article class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                    </div>
+                    <h3>Klaviertransporte</h3>
+                    <p>Sensible Instrumente brauchen Spezialisten. Mit Spezialausrüstung und geschultem Personal transportieren wir Ihr Klavier sicher.</p>
+                </article>
+                <article class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="3 6 5 6 7 18"/><circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/><path d="M7.5 8h13l-1.6 8H9.1"/></svg>
+                    </div>
+                    <h3>Sperrgutentsorgung</h3>
+                    <p>Alte Möbel, Elektrogeräte oder Bauschutt? Wir entsorgen Ihr Sperrgut fachgerecht und umweltbewusst.</p>
+                </article>
+                <article class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="6" width="22" height="12" rx="2"/><path d="M1 10h22"/></svg>
+                    </div>
+                    <h3>Möbelmontage</h3>
+                    <p>Auf- und Abbau Ihrer Möbel gehört bei uns zum Service. Schnell, sorgfältig und mit dem richtigen Werkzeug.</p>
+                </article>
+                <article class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 2v20M17 2v20M2 12h20M2 7h5M2 17h5M17 17h5M17 7h5"/></svg>
+                    </div>
+                    <h3>Einlagerung</h3>
+                    <p>Sichere, trockene Lagerflächen für Ihre Möbel und Gegenstände – kurz- oder langfristig, flexibel buchbar.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Warum wir / Why us -->
+    <section class="why-section" id="warum-wir" aria-labelledby="why-heading">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <p class="section-label">Warum FST?</p>
+                <h2 class="section-title" id="why-heading">Vertrauen, das bewegt</h2>
+                <p class="section-subtitle">Was uns von anderen Umzugsunternehmen unterscheidet.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-item reveal">
+                    <div class="why-number">01</div>
+                    <h3>Festpreisgarantie</h3>
+                    <p>Keine versteckten Kosten. Sie erhalten ein transparentes Angebot, das verbindlich ist – ohne böse Überraschungen.</p>
+                </div>
+                <div class="why-item reveal">
+                    <div class="why-number">02</div>
+                    <h3>Vollversichert</h3>
+                    <p>Jeder Transport ist umfassend versichert. Ihre Möbel und Wertgegenstände sind bei uns in sicheren Händen.</p>
+                </div>
+                <div class="why-item reveal">
+                    <div class="why-number">03</div>
+                    <h3>Erfahrenes Team</h3>
+                    <p>Unser geschultes Personal weiß, worauf es ankommt. Professionalität und Freundlichkeit garantiert.</p>
+                </div>
+                <div class="why-item reveal">
+                    <div class="why-number">04</div>
+                    <h3>Pünktlich & Zuverlässig</h3>
+                    <p>Terminzusagen sind für uns verbindlich. Wir sind da, wann wir es versprochen haben – auf die Minute.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ablauf / Process -->
+    <section id="ablauf" aria-labelledby="process-heading">
+        <div class="section-inner">
+            <div class="section-header reveal" style="text-align:center;">
+                <p class="section-label">So einfach geht's</p>
+                <h2 class="section-title" id="process-heading">In 4 Schritten zum Umzug</h2>
+                <p class="section-subtitle" style="margin:0 auto;">Von der Anfrage bis zum Einzug – wir machen es Ihnen einfach.</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step reveal">
+                    <div class="step-number">1</div>
+                    <h3>Anfrage stellen</h3>
+                    <p>Kontaktieren Sie uns telefonisch oder per Formular. Schildern Sie uns Ihr Anliegen.</p>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-number">2</div>
+                    <h3>Besichtigung & Angebot</h3>
+                    <p>Wir besichtigen auf Wunsch vor Ort und erstellen ein kostenloses, verbindliches Angebot.</p>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-number">3</div>
+                    <h3>Umzugstag</h3>
+                    <p>Unser Team kümmert sich um Verpackung, Transport und Aufbau – stressfrei für Sie.</p>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-number">4</div>
+                    <h3>Einzug & Fertig</h3>
+                    <p>Alles steht an seinem Platz. Sie genießen Ihr neues Zuhause – wir kümmern uns um den Rest.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bewertungen / Testimonials -->
+    <section class="testimonials-section" id="bewertungen" aria-labelledby="reviews-heading">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <p class="section-label">Kundenstimmen</p>
+                <h2 class="section-title" id="reviews-heading">Was unsere Kunden sagen</h2>
+                <p class="section-subtitle">Über 180 zufriedene Kunden bewerten uns mit 4.9 von 5 Sternen.</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>„Ein Umzug ohne Stress – ich hätte es nicht für möglich gehalten. Das Team war pünktlich, freundlich und unglaublich sorgfältig. Absolute Empfehlung!"</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">S</div>
+                        <div>
+                            <div class="testimonial-name">Sabine M.</div>
+                            <div class="testimonial-detail">Privatumzug, 3-Zimmer-Wohnung</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>„Unser Flügel wurde wie ein rohes Ei behandelt. Perfekter Klaviertransport – vom Altbau 3. Stock ohne Aufzug. Wahnsinn, was das Team geleistet hat."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">T</div>
+                        <div>
+                            <div class="testimonial-name">Thomas K.</div>
+                            <div class="testimonial-detail">Klaviertransport</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>„Wir haben FST für unseren Büroumzug beauftragt. 50 Arbeitsplätze, am Wochenende erledigt. Am Montag war alles einsatzbereit. Top-Organisation!"</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">L</div>
+                        <div>
+                            <div class="testimonial-name">Laura B.</div>
+                            <div class="testimonial-detail">Firmenumzug, 50 Arbeitsplätze</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Kontakt -->
+    <section class="cta-section" id="kontakt" aria-labelledby="cta-heading">
+        <div class="section-inner">
+            <div class="reveal">
+                <p class="section-label" style="color:var(--color-accent-light);">Jetzt starten</p>
+                <h2 id="cta-heading">Bereit für Ihren stressfreien Umzug?</h2>
+                <p>Fordern Sie jetzt Ihr kostenloses und unverbindliches Angebot an. Wir melden uns innerhalb von 24 Stunden.</p>
+                <a href="tel:+49XXXXXXXXX" class="btn btn-primary" style="font-size:1.05rem; padding: 1.1rem 2.5rem;">
+                    Jetzt anrufen
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                </a>
+                <div class="cta-contact-row">
+                    <div class="cta-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        info@fst-transporte.de
+                    </div>
+                    <div class="cta-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Ihre Stadt, Deutschland
+                    </div>
+                    <div class="cta-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        Mo – Sa: 07:00 – 20:00
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="#" class="nav-logo">FST</a>
+                <p>Ihr zuverlässiges Umzugsunternehmen für Möbeltransporte, Klaviertransporte und Sperrgutentsorgung. Professionell, versichert, termingerecht.</p>
+            </div>
+            <div>
+                <h4>Leistungen</h4>
+                <ul>
+                    <li><a href="#leistungen">Privatumzüge</a></li>
+                    <li><a href="#leistungen">Firmenumzüge</a></li>
+                    <li><a href="#leistungen">Klaviertransporte</a></li>
+                    <li><a href="#leistungen">Sperrgutentsorgung</a></li>
+                    <li><a href="#leistungen">Einlagerung</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Unternehmen</h4>
+                <ul>
+                    <li><a href="#warum-wir">Über uns</a></li>
+                    <li><a href="#bewertungen">Bewertungen</a></li>
+                    <li><a href="#ablauf">So funktioniert's</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Rechtliches</h4>
+                <ul>
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                    <li><a href="#">AGB</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 FST Transporte. Alle Rechte vorbehalten.</span>
+            <span><a href="#">Impressum</a> · <a href="#">Datenschutz</a></span>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        const nav = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 60);
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', !expanded);
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => navLinks.classList.remove('active'));
+        });
+
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => entry.target.classList.add('visible'), i * 80);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        reveals.forEach(el => observer.observe(el));
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+</html>
