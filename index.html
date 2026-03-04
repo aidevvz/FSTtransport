@@ -88,16 +88,14 @@ body { font-family: var(--font-body); background: var(--color-bg); color: var(--
 /* HERO SPLIT LAYOUT */
 .hero { min-height: auto; height: 110vh; max-height: 1450px; display: flex; align-items: stretch; position: relative; overflow: hidden; background: linear-gradient(135deg, #1B1F2A 0%, #11141B 50%, #2A2F3D 100%); }
 .hero-left {
-    flex: 1 1 50%; display: flex; align-items: center; justify-content: center;
-    position: relative; z-index: 2; padding: 4.5rem 3rem 2rem;
+    flex: 1 1 45%; display: flex; align-items: center; justify-content: center;
+    position: relative; z-index: 2; padding: 4.5rem 1rem 2rem 3rem;
 }
 .hero-content { position: relative; z-index: 2; max-width: 540px; text-align: left; }
 .hero-right {
-    flex: 1 1 50%; position: relative; overflow: hidden;
-    display: flex; gap: 1rem; padding: 0 1.5rem;
+    flex: 1 1 55%; position: relative; overflow: hidden;
+    display: flex; gap: 1rem; padding: 0 1rem;
 }
-.hero-right::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 80px; background: linear-gradient(90deg, #11141B, transparent); z-index: 3; pointer-events: none; }
-.hero-right::after { content: ''; position: absolute; right: 0; top: 0; bottom: 0; width: 40px; background: linear-gradient(-90deg, #1B1F2A 30%, transparent); z-index: 3; pointer-events: none; }
 
 /* Photo columns */
 .photo-col {
@@ -124,17 +122,11 @@ body { font-family: var(--font-body); background: var(--color-bg); color: var(--
 .hero-photo {
     width: 100%; border-radius: 14px;
     object-fit: cover; aspect-ratio: 3/4;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
     transition: transform 0.4s ease;
     flex-shrink: 0;
 }
 .hero-photo:hover { transform: scale(1.03); }
-
-/* Gradient overlays top/bottom for seamless scroll illusion */
-.hero-right .fade-top,
-.hero-right .fade-bottom { position: absolute; left: 0; right: 0; height: 120px; z-index: 4; pointer-events: none; }
-.hero-right .fade-top { top: 0; background: linear-gradient(to bottom, #11141B 0%, transparent 100%); }
-.hero-right .fade-bottom { bottom: 0; background: linear-gradient(to top, #1B1F2A 0%, transparent 100%); }
 
 /* BUTTONS */
 .btn { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.9rem 1.8rem; border-radius: 50px; font-family: var(--font-body); font-size: 0.95rem; font-weight: 600; text-decoration: none; cursor: pointer; border: none; transition: var(--transition); letter-spacing: 0.3px; }
@@ -342,8 +334,6 @@ footer ul a:hover { color: var(--color-accent); }
             </div>
         </div>
         <div class="hero-right">
-            <div class="fade-top"></div>
-            <div class="fade-bottom"></div>
             <!-- Left column: scrolls UP -->
             <div class="photo-col photo-col-up">
                 <div class="photo-col-inner">
