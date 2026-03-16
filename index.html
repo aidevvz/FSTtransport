@@ -107,8 +107,8 @@ body { font-family: var(--font-body); background: var(--color-bg); color: var(--
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-.photo-col-up .photo-col-inner { animation: scrollUp 30s linear infinite; }
-.photo-col-down .photo-col-inner { animation: scrollDown 30s linear infinite; }
+.photo-col-up .photo-col-inner { animation: scrollUp 50s linear infinite; }
+.photo-col-down .photo-col-inner { animation: scrollDown 50s linear infinite; }
 
 @keyframes scrollUp {
     0% { transform: translateY(0); }
@@ -122,7 +122,7 @@ body { font-family: var(--font-body); background: var(--color-bg); color: var(--
 .hero-photo {
     width: 100%; border-radius: 14px;
     object-fit: cover; object-position: center top;
-    aspect-ratio: 4/5;
+    aspect-ratio: 3/4;
     box-shadow: 0 2px 12px rgba(0,0,0,0.15);
     transition: transform 0.4s ease;
     flex-shrink: 0;
