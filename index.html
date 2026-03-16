@@ -94,39 +94,26 @@ body { font-family: var(--font-body); background: var(--color-bg); color: var(--
 .hero-content { position: relative; z-index: 2; max-width: 540px; text-align: left; }
 .hero-right {
     flex: 1 1 55%; position: relative; overflow: hidden;
-    display: flex; gap: 1rem; padding: 0 1rem;
+    display: flex; align-items: center; padding: 0;
 }
 
-/* Photo columns */
-.photo-col {
-    flex: 1; display: flex; flex-direction: column; gap: 1rem;
-    position: relative;
+/* Photo carousel */
+.photo-carousel {
+    display: flex; gap: 1rem;
+    animation: scrollRight 40s linear infinite;
 }
-.photo-col-inner {
-    display: flex; flex-direction: column; gap: 1rem;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-.photo-col-up .photo-col-inner { animation: scrollUp 50s linear infinite; }
-.photo-col-down .photo-col-inner { animation: scrollDown 50s linear infinite; }
 
-@keyframes scrollUp {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-50%); }
-}
-@keyframes scrollDown {
-    0% { transform: translateY(-50%); }
-    100% { transform: translateY(0); }
+@keyframes scrollRight {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
 }
 
 .hero-photo {
-    width: 100%; height: 280px; border-radius: 14px;
+    width: 300px; height: 280px; border-radius: 14px;
     object-fit: cover; object-position: center top;
     box-shadow: 0 2px 12px rgba(0,0,0,0.15);
-    transition: transform 0.4s ease;
     flex-shrink: 0;
 }
-.hero-photo:hover { transform: scale(1.03); }
 
 /* BUTTONS */
 .btn { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.9rem 1.8rem; border-radius: 50px; font-family: var(--font-body); font-size: 0.95rem; font-weight: 600; text-decoration: none; cursor: pointer; border: none; transition: var(--transition); letter-spacing: 0.3px; }
@@ -273,7 +260,7 @@ footer ul a:hover { color: var(--color-accent); }
     .hero-content { max-width: 100%; text-align: center; }
     .hero-content .hero-actions { justify-content: center; }
     .hero-content .hero-stats { justify-content: center; }
-    .hero-right { flex: none; height: 40vh; padding: 0 0.75rem; }
+    .hero-right { flex: none; height: auto; padding: 1rem 0; }
 }
 
 /* RESPONSIVE - MOBILE */
@@ -305,8 +292,8 @@ footer ul a:hover { color: var(--color-accent); }
     .hero-stat-label { font-size: 0.65rem; letter-spacing: 0.5px; }
 
     /* Hero photos */
-    .hero-right { height: 32vh; gap: 0.6rem; padding: 0 0.4rem; }
-    .hero-photo { border-radius: 10px; height: 200px; }
+    .hero-right { height: 32vh; align-items: flex-start; }
+    .hero-photo { width: 220px; height: 200px; border-radius: 10px; }
 
     /* Sections */
     section { padding: 3rem 1.1rem; }
@@ -421,37 +408,18 @@ footer ul a:hover { color: var(--color-accent); }
             </div>
         </div>
         <div class="hero-right">
-            <!-- Left column: scrolls UP -->
-            <div class="photo-col photo-col-up">
-                <div class="photo-col-inner">
-                    <img src="team/team-1.jpg" alt="packdas! Team vor dem Transporter" class="hero-photo" loading="eager">
-                    <img src="team/team-2.jpg" alt="packdas! Mitarbeiter bei der Arbeit" class="hero-photo" loading="eager">
-                    <img src="team/team-3.jpg" alt="packdas! Möbeltransport" class="hero-photo" loading="lazy">
-                    <img src="team/team-4.jpg" alt="packdas! Team beim Umzug" class="hero-photo" loading="lazy">
-                    <img src="team/team-5.jpg" alt="packdas! professioneller Transport" class="hero-photo" loading="lazy">
-                    <!-- Duplicate for seamless loop -->
-                    <img src="team/team-1.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
-                    <img src="team/team-2.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
-                    <img src="team/team-3.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
-                    <img src="team/team-4.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
-                    <img src="team/team-5.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
-                </div>
-            </div>
-            <!-- Right column: scrolls DOWN -->
-            <div class="photo-col photo-col-down">
-                <div class="photo-col-inner">
-                    <img src="team/team-3.jpg" alt="packdas! Möbeltransport" class="hero-photo" loading="eager">
-                    <img src="team/team-5.jpg" alt="packdas! professioneller Transport" class="hero-photo" loading="lazy">
-                    <img src="team/team-1.jpg" alt="packdas! Team vor dem Transporter" class="hero-photo" loading="lazy">
-                    <img src="team/team-4.jpg" alt="packdas! Team beim Umzug" class="hero-photo" loading="lazy">
-                    <img src="team/team-2.jpg" alt="packdas! Mitarbeiter bei der Arbeit" class="hero-photo" loading="lazy">
-                    <!-- Duplicate for seamless loop -->
-                    <img src="team/team-3.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
-                    <img src="team/team-5.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
-                    <img src="team/team-1.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
-                    <img src="team/team-4.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
-                    <img src="team/team-2.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
-                </div>
+            <div class="photo-carousel">
+                <img src="team/team-1.jpg" alt="packdas! Team" class="hero-photo" loading="eager">
+                <img src="team/team-2.jpg" alt="packdas! Team" class="hero-photo" loading="eager">
+                <img src="team/team-3.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
+                <img src="team/team-4.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
+                <img src="team/team-5.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
+                <!-- Duplicate for seamless loop -->
+                <img src="team/team-1.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
+                <img src="team/team-2.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
+                <img src="team/team-3.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
+                <img src="team/team-4.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
+                <img src="team/team-5.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
             </div>
         </div>
     </header>
