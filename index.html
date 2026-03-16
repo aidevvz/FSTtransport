@@ -120,8 +120,9 @@ body { font-family: var(--font-body); background: var(--color-bg); color: var(--
 }
 
 .hero-photo {
-    width: 100%; height: 280px; border-radius: 14px;
+    width: 100%; border-radius: 14px;
     object-fit: cover; object-position: center top;
+    aspect-ratio: 4/5;
     box-shadow: 0 2px 12px rgba(0,0,0,0.15);
     transition: transform 0.4s ease;
     flex-shrink: 0;
@@ -306,7 +307,7 @@ footer ul a:hover { color: var(--color-accent); }
 
     /* Hero photos */
     .hero-right { height: 32vh; gap: 0.6rem; padding: 0 0.4rem; }
-    .hero-photo { border-radius: 10px; height: 200px; }
+    .hero-photo { border-radius: 10px; }
 
     /* Sections */
     section { padding: 3rem 1.1rem; }
@@ -427,22 +428,30 @@ footer ul a:hover { color: var(--color-accent); }
                     <img src="team/team-1.jpg" alt="packdas! Team vor dem Transporter" class="hero-photo" loading="eager">
                     <img src="team/team-2.jpg" alt="packdas! Mitarbeiter bei der Arbeit" class="hero-photo" loading="eager">
                     <img src="team/team-3.jpg" alt="packdas! Möbeltransport" class="hero-photo" loading="lazy">
-                    <!-- Duplicated for seamless loop -->
-                    <img src="team/team-1.jpg" alt="packdas! Team vor dem Transporter" class="hero-photo" loading="lazy">
-                    <img src="team/team-2.jpg" alt="packdas! Mitarbeiter bei der Arbeit" class="hero-photo" loading="lazy">
-                    <img src="team/team-3.jpg" alt="packdas! Möbeltransport" class="hero-photo" loading="lazy">
+                    <img src="team/team-4.jpg" alt="packdas! Team beim Umzug" class="hero-photo" loading="lazy">
+                    <img src="team/team-5.jpg" alt="packdas! professioneller Transport" class="hero-photo" loading="lazy">
+                    <!-- Duplicate for seamless loop -->
+                    <img src="team/team-1.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
+                    <img src="team/team-2.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
+                    <img src="team/team-3.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
+                    <img src="team/team-4.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
+                    <img src="team/team-5.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
                 </div>
             </div>
             <!-- Right column: scrolls DOWN -->
             <div class="photo-col photo-col-down">
                 <div class="photo-col-inner">
-                    <img src="team/team-4.jpg" alt="packdas! Team beim Umzug" class="hero-photo" loading="eager">
+                    <img src="team/team-3.jpg" alt="packdas! Möbeltransport" class="hero-photo" loading="eager">
                     <img src="team/team-5.jpg" alt="packdas! professioneller Transport" class="hero-photo" loading="lazy">
                     <img src="team/team-1.jpg" alt="packdas! Team vor dem Transporter" class="hero-photo" loading="lazy">
-                    <!-- Duplicated for seamless loop -->
                     <img src="team/team-4.jpg" alt="packdas! Team beim Umzug" class="hero-photo" loading="lazy">
-                    <img src="team/team-5.jpg" alt="packdas! professioneller Transport" class="hero-photo" loading="lazy">
-                    <img src="team/team-1.jpg" alt="packdas! Team vor dem Transporter" class="hero-photo" loading="lazy">
+                    <img src="team/team-2.jpg" alt="packdas! Mitarbeiter bei der Arbeit" class="hero-photo" loading="lazy">
+                    <!-- Duplicate for seamless loop -->
+                    <img src="team/team-3.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
+                    <img src="team/team-5.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
+                    <img src="team/team-1.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
+                    <img src="team/team-4.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
+                    <img src="team/team-2.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
                 </div>
             </div>
         </div>
