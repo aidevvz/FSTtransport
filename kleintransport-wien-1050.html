@@ -308,6 +308,14 @@ footer ul a:hover { color: var(--color-accent); }
     .why-grid { grid-template-columns: 1fr; }
     .bezirke-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* TEAM BANNER */
+.team-banner { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+.team-banner img { width: 100%; height: 220px; object-fit: cover; object-position: center top; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+@media (max-width: 768px) {
+    .team-banner { padding: 0 1.1rem; gap: 0.6rem; }
+    .team-banner img { height: 150px; border-radius: 8px; }
+}
 </style>
 </head>
 <body>
@@ -343,6 +351,12 @@ footer ul a:hover { color: var(--color-accent); }
             </div>
         </div>
     </header>
+    <section style="padding:2rem 0 0;">
+        <div class="team-banner">
+            <img src="team/team-4.jpg" alt="packdas! Team bei der Arbeit" loading="lazy">
+            <img src="team/team-5.jpg" alt="packdas! Team beim Umzug" loading="lazy">
+        </div>
+    </section>
 
     <section>
         <div class="section-inner content-block reveal">
