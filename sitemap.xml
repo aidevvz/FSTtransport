@@ -76,4 +76,7 @@
   <url><loc>https://packdas.at/umzug-wien-1230</loc><priority>0.7</priority></url>
   <url><loc>https://packdas.at/entruempelung-wien-1230</loc><priority>0.7</priority></url>
   <url><loc>https://packdas.at/kleintransport-wien-1230</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/impressum.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://packdas.at/datenschutz.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://packdas.at/agb.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
 </urlset>
