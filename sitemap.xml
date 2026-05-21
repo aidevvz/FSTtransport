@@ -79,4 +79,29 @@
   <url><loc>https://packdas.at/impressum.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
   <url><loc>https://packdas.at/datenschutz.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
   <url><loc>https://packdas.at/agb.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://packdas.at/raeumung-wien</loc><priority>0.9</priority></url>
+  <url><loc>https://packdas.at/raeumung-klosterneuburg</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-korneuburg</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-stockerau</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-gerasdorf</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-langenzersdorf</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-deutsch-wagram</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-wolkersdorf</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-schwechat</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-gross-enzersdorf</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-fischamend</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-moedling</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-perchtoldsdorf</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-brunn-am-gebirge</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-voesendorf</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-wiener-neudorf</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-maria-enzersdorf</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-baden</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-traiskirchen</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-laxenburg</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-himberg</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-purkersdorf</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-pressbaum</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-tulln</loc><priority>0.7</priority></url>
+  <url><loc>https://packdas.at/raeumung-gablitz</loc><priority>0.7</priority></url>
 </urlset>
