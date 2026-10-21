@@ -387,6 +387,10 @@ footer ul a:hover { color: var(--color-accent); }
 /* Hochformat-Fotos ganz zeigen (Klavier) */
 .team-banner.tall img { height: auto; aspect-ratio: 3/4; object-position: center; }
 .hero-photo.portrait { width: auto; aspect-ratio: 3/4; object-position: center; }
+
+/* H1 Unterzeile Startseite */
+.hero h1 .h1-sub { display: block; font-family: var(--font-body); font-size: clamp(1rem, 1.6vw, 1.35rem); font-weight: 600; color: rgba(255,255,255,0.85); margin-top: 0.8rem; line-height: 1.4; }
+.hero-stat-number { white-space: nowrap; }
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFD9GFY17M"></script>
@@ -426,8 +430,8 @@ footer ul a:hover { color: var(--color-accent); }
         <div class="hero-pattern"></div>
         <div class="hero-left">
             <div class="hero-content">
-                <h1>Umzug Wien – Professionell, Günstig & 24/7 mit <span class="accent">packdas!</span></h1>
-                <p>Ihr zuverlässiger Partner für Umzüge in allen 23 Wiener Bezirken. Festpreis ab 240 €, eigener LKW, erfahrenes Team. Auch kurzfristig und an Feiertagen.</p>
+                <h1>Umzugsfirma Wien <span class="accent">packdas!</span><span class="h1-sub">Umzug, Entrümpelung &amp; Möbeltransport – 24/7</span></h1>
+                <p>Ihre Umzugsfirma für alle 23 Wiener Bezirke und Wien-Umgebung. Umzug ab 240 €, Entrümpelung ab 120 € – eigener LKW, eigenes Team, auch kurzfristig und an Feiertagen.</p>
                 <div class="hero-actions">
                     <a href="https://wa.me/436766064470?text=Hallo%20packdas!%20Ich%20m%C3%B6chte%20ein%20Angebot%20anfordern." target="_blank" rel="noopener" class="btn btn-whatsapp"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>WhatsApp Angebot</a>
                     <a href="tel:+436766064470" class="btn btn-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Jetzt anrufen</a>
@@ -463,7 +467,7 @@ footer ul a:hover { color: var(--color-accent); }
         <div class="section-inner">
             <div class="section-header reveal">
                 <p class="section-label">Unsere Leistungen</p>
-                <h2 class="section-title">Umzug, Entrümpelung, Räumung & mehr – alles aus einer Hand</h2>
+                <h2 class="section-title">Umzug, Entrümpelung, Möbeltransport &amp; mehr – alles aus einer Hand</h2>
                 <p class="section-subtitle">Von der Studentenwohnung bis zum Firmenumzug. In allen 23 Bezirken Wiens.</p>
             </div>
             <div class="services-grid">
@@ -496,6 +500,21 @@ footer ul a:hover { color: var(--color-accent); }
     </section>
 
     <!-- WHY US -->
+    <section id="umzugsfirma">
+        <div class="section-inner content-block reveal">
+            <p class="section-label">Umzugsfirma Wien</p>
+            <h2>Möbeltransport, Firmenumzug &amp; Übersiedlung in Wien</h2>
+            <p>Als Umzugsfirma aus Wien übernehmen wir mehr als den klassischen Wohnungsumzug. Mit eigenem LKW und eigenem Team – ohne Subunternehmer – erledigen wir auch einzelne Möbeltransporte, Firmenumzüge und Übersiedlungen ins Umland. Ihr Umzugsgut ist dabei transportversichert.</p>
+            <h3>Möbeltransport Wien</h3>
+            <p>Ein Sofa, ein Kasten oder der Kühlschrank vom Willhaben-Verkäufer: Für einzelne Möbelstücke brauchen Sie keinen kompletten Umzug. Unser <a href="kleintransport-wien.html" style="color:var(--color-accent);">Kleintransport und Möbeltransport in Wien</a> holt ab, trägt über alle Stiegen und liefert direkt in Ihre Wohnung – ab 90 €, auch kurzfristig.</p>
+            <h3>Firmenumzug Wien</h3>
+            <p>Büro, Praxis oder Geschäftslokal: Bei einem Firmenumzug planen wir den Termin so, dass Ihr Betrieb möglichst kurz stillsteht – auf Wunsch am Abend oder am Wochenende, denn wir sind 24/7 erreichbar. Mehr dazu auf unserer Seite <a href="umzug-wien.html" style="color:var(--color-accent);">Umzug &amp; Übersiedlung Wien</a>.</p>
+            <h3>Übersiedlung Wien &amp; Umgebung</h3>
+            <p>Übersiedlung ist das österreichische Wort für Umzug – gemeint ist dasselbe. Wir übersiedeln Sie innerhalb Wiens und zwischen Wien und dem Umland, etwa nach Mödling, Baden, Korneuburg oder Schwechat. Alle Orte finden Sie unter <a href="umzug-niederoesterreich.html" style="color:var(--color-accent);">Umzug Niederösterreich</a>.</p>
+            <p>Den Festpreis erhalten Sie in wenigen Minuten: Schicken Sie uns Fotos per WhatsApp – unser Team spricht Deutsch, Englisch und Polnisch.</p>
+        </div>
+    </section>
+
     <section class="why-section" id="warum">
         <div class="section-inner">
             <div class="section-header reveal">
