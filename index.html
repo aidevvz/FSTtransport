@@ -16,7 +16,7 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_AT">
     <link rel="alternate" hreflang="de" href="https://packdas.at/">
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MovingCompany", "name": "packdas!", "url": "https://packdas.at", "telephone": "+436766064470", "email": "office@packdas.at", "address": {"@type": "PostalAddress", "streetAddress": "Burghardtgasse 21/12", "addressLocality": "Wien", "postalCode": "1200", "addressCountry": "AT"}, "geo": {"@type": "GeoCoordinates", "latitude": 48.2378, "longitude": 16.3673}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "00:00", "closes": "23:59"}], "priceRange": "€€","logo":"https://packdas.at/favicon.png","image":"https://packdas.at/team/team-3.jpg", "areaServed": {"@type": "City", "name": "Wien"}, "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Umzug, Entrümpelung & Kleintransport", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Umzug Wien"}, "price": "240", "priceCurrency": "EUR"}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Entrümpelung Wien"}, "price": "120", "priceCurrency": "EUR"}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Kleintransport Wien"}, "price": "90", "priceCurrency": "EUR"}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Klaviertransport Wien"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Nachlassräumung Wien"}, "price": "149", "priceCurrency": "EUR"}]}, "sameAs": ["https://www.instagram.com/packdas.at/", "https://www.reddit.com/r/wien/comments/1osr5ei/habt_ihr_tipps_f%C3%BCr_eine_verl%C3%A4ssliche_umzugsfirma/"]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MovingCompany", "name": "packdas!", "url": "https://packdas.at", "telephone": "+436766064470", "email": "office@packdas.at", "address": {"@type": "PostalAddress", "streetAddress": "Burghardtgasse 21/12", "addressLocality": "Wien", "postalCode": "1200", "addressCountry": "AT"}, "geo": {"@type": "GeoCoordinates", "latitude": 48.2378, "longitude": 16.3673}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "00:00", "closes": "23:59"}], "priceRange": "€€","logo":"https://packdas.at/favicon.png","image":"https://packdas.at/bilder/packdas-moebelpacker-sofa-tragen.jpg", "areaServed": {"@type": "City", "name": "Wien"}, "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Umzug, Entrümpelung & Kleintransport", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Umzug Wien"}, "price": "240", "priceCurrency": "EUR"}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Entrümpelung Wien"}, "price": "120", "priceCurrency": "EUR"}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Kleintransport Wien"}, "price": "90", "priceCurrency": "EUR"}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Klaviertransport Wien"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Nachlassräumung Wien"}, "price": "149", "priceCurrency": "EUR"}]}, "sameAs": ["https://www.instagram.com/packdas.at/", "https://www.reddit.com/r/wien/comments/1osr5ei/habt_ihr_tipps_f%C3%BCr_eine_verl%C3%A4ssliche_umzugsfirma/"]}</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -378,6 +378,11 @@ footer ul a:hover { color: var(--color-accent); }
     .why-grid { grid-template-columns: 1fr; }
     .bezirke-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Hero-Abstand zur Navigation (Fix 21.10.2026) */
+.hero-sm { padding-top: 7.5rem; padding-bottom: 3rem; }
+.hero-sm h1 { font-size: clamp(1.7rem, 3.6vw, 3.1rem); }
+@media (max-width: 768px) { .hero-sm { padding-top: 6rem; } }
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFD9GFY17M"></script>
@@ -434,17 +439,17 @@ footer ul a:hover { color: var(--color-accent); }
         </div>
         <div class="hero-right">
             <div class="photo-carousel">
-                <img src="team/team-1.jpg" alt="packdas! Team" class="hero-photo" loading="eager">
-                <img src="team/team-2.jpg" alt="packdas! Team" class="hero-photo" loading="eager">
-                <img src="team/team-3.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
-                <img src="team/team-4.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
-                <img src="team/team-5.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
+                <img src="bilder/packdas-team-transporter-wien.jpg" alt="Drei Mitarbeiter von packdas! mit Sackkarre und Werkzeugkoffer vor zwei weißen Transportern – Umzugsfirma Wien" class="hero-photo" loading="eager">
+                <img src="bilder/packdas-moebelpacker-lkw-wien.jpg" alt="Zwei packdas!-Möbelpacker beim Handschlag vor dem weißen Transporter – Umzugsfirma Wien" class="hero-photo" loading="eager">
+                <img src="bilder/packdas-moebelpacker-sofa-tragen.jpg" alt="Zwei packdas!-Möbelpacker tragen ein graues Sofa durch eine Wohnung – Umzugsfirma Wien" class="hero-photo" loading="lazy">
+                <img src="bilder/packdas-kasten-verladen-transporter.jpg" alt="packdas!-Team verlädt ein Kastenelement in den Transporter – Umzugsfirma Wien" class="hero-photo" loading="lazy">
+                <img src="bilder/packdas-klaviertransport-team.jpg" alt="Zwei packdas!-Mitarbeiter tragen ein Klavier vor einem Haus – Umzugsfirma Wien" class="hero-photo" loading="lazy">
                 <!-- Duplicate for seamless loop -->
-                <img src="team/team-1.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
-                <img src="team/team-2.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
-                <img src="team/team-3.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
-                <img src="team/team-4.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
-                <img src="team/team-5.jpg" alt="packdas! Team" class="hero-photo" loading="lazy">
+                <img src="bilder/packdas-team-transporter-wien.jpg" alt="Drei Mitarbeiter von packdas! mit Sackkarre und Werkzeugkoffer vor zwei weißen Transportern – Umzugsfirma Wien" class="hero-photo" loading="lazy">
+                <img src="bilder/packdas-moebelpacker-lkw-wien.jpg" alt="Zwei packdas!-Möbelpacker beim Handschlag vor dem weißen Transporter – Umzugsfirma Wien" class="hero-photo" loading="lazy">
+                <img src="bilder/packdas-moebelpacker-sofa-tragen.jpg" alt="Zwei packdas!-Möbelpacker tragen ein graues Sofa durch eine Wohnung – Umzugsfirma Wien" class="hero-photo" loading="lazy">
+                <img src="bilder/packdas-kasten-verladen-transporter.jpg" alt="packdas!-Team verlädt ein Kastenelement in den Transporter – Umzugsfirma Wien" class="hero-photo" loading="lazy">
+                <img src="bilder/packdas-klaviertransport-team.jpg" alt="Zwei packdas!-Mitarbeiter tragen ein Klavier vor einem Haus – Umzugsfirma Wien" class="hero-photo" loading="lazy">
             </div>
         </div>
     </header>
