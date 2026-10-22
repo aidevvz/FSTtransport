@@ -17,9 +17,8 @@
     <meta property="og:locale" content="de_AT">
     <link rel="alternate" hreflang="de" href="https://packdas.at/umzug-wien">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Umzug Wien", "provider": {"@type": "MovingCompany", "name": "packdas!", "url": "https://packdas.at", "sameAs": ["https://www.google.com/maps?cid=11234201469434106058"]}, "areaServed": {"@type": "City", "name": "Wien"}, "offers": {"@type": "Offer", "price": "240", "priceCurrency": "EUR", "description": "Umzug Wien ab 240€"}, "serviceType": "Umzug", "description": "Professioneller Umzugsservice in Wien. Alle 23 Bezirke.", "logo": "https://packdas.at/favicon.png", "image": "https://packdas.at/bilder/packdas-kasten-verladen-transporter.jpg", "sameAs": ["https://www.reddit.com/r/wien/comments/1osr5ei/habt_ihr_tipps_f%C3%BCr_eine_verl%C3%A4ssliche_umzugsfirma/"]}</script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" as="image" type="image/webp" imagesrcset="bilder/packdas-team-wien-sm.webp 600w, bilder/packdas-team-wien-lg.webp 1200w" imagesizes="(max-width: 768px) 100vw, 600px" fetchpriority="high">
     <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 :root {
@@ -339,6 +338,8 @@ footer ul a:hover { color: var(--color-accent); }
   gtag('config', 'G-ZFD9GFY17M');
 </script>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Was kostet ein Umzug mit packdas!?", "acceptedAnswer": {"@type": "Answer", "text": "Unsere Umzüge starten ab 240 € als Festpreis. Der genaue Preis hängt von der Wohnungsgröße, Stockwerk, Entfernung und gewünschten Zusatzleistungen ab. Schicken Sie uns einfach Fotos per WhatsApp – Sie erhalten innerhalb weniger Minuten ein verbindliches Angebot."}}, {"@type": "Question", "name": "Wie kurzfristig kann ich einen Umzug buchen?", "acceptedAnswer": {"@type": "Answer", "text": "Wir sind 24/7 erreichbar und können oft auch innerhalb von 24 Stunden einen Umzug durchführen. Selbst Wochenend- und Feiertagstermine sind bei uns ohne Aufpreis möglich."}}, {"@type": "Question", "name": "Muss ich selbst Kartons und Verpackungsmaterial besorgen?", "acceptedAnswer": {"@type": "Answer", "text": "Nein – auf Wunsch bringen wir professionelles Verpackungsmaterial mit und übernehmen das Einpacken für Sie. Das können Sie bei der Angebotserstellung einfach dazubuchen."}}, {"@type": "Question", "name": "Ist mein Umzugsgut versichert?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, alle Transporte sind über unsere Betriebshaftpflicht versichert. Wir gehen mit Ihren Möbeln und Gegenständen so sorgsam um wie mit unseren eigenen."}}, {"@type": "Question", "name": "Baut ihr auch Möbel ab und wieder auf?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, Ab- und Aufbau von Möbeln gehört zu unserem Standard. Egal ob IKEA-Regale, Kleiderschränke oder Küchen – unser Team bringt das nötige Werkzeug mit."}}, {"@type": "Question", "name": "In welchen Sprachen kann ich kommunizieren?", "acceptedAnswer": {"@type": "Answer", "text": "Unser Team spricht fließend Deutsch, Englisch und Polnisch. Internationale Kunden sind bei uns bestens aufgehoben."}}]}</script>
+    <link rel="stylesheet" href="/assets/site.css">
+    <!-- design-c -->
 </head>
 <body>
     <div class="announcement-bar" role="banner">
@@ -350,7 +351,7 @@ footer ul a:hover { color: var(--color-accent); }
     </div>
     <nav class="nav" id="navbar" role="navigation" aria-label="Hauptnavigation">
         <div class="nav-inner">
-            <a href="index.html" class="nav-logo">packdas!</a>
+            <a href="index.html" class="nav-logo">packdas<span class="logo-mark">!</span></a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="umzug-wien.html">Umzug</a></li>
                 <li><a href="entruempelung-wien.html">Entrümpelung</a></li>
@@ -374,13 +375,12 @@ footer ul a:hover { color: var(--color-accent); }
                 <a href="tel:+436766064470" class="btn btn-primary">Anrufen</a>
             </div>
         </div>
-    </header>
-    <section style="padding:2rem 0 0;">
-        <div class="team-banner">
-            <img src="bilder/packdas-team-wien.jpg" alt="Drei Mitarbeiter des packdas!-Teams in Arbeitskleidung – Umzug &amp; Übersiedlung Wien" width="1400" height="933" loading="lazy">
-            <img src="bilder/packdas-kasten-verladen-transporter.jpg" alt="packdas!-Team verlädt ein Kastenelement in den Transporter – Umzug &amp; Übersiedlung Wien" width="1400" height="933" loading="lazy">
+    
+        <div class="hero-bento duo land2">
+            <figure class="tile big"><picture><source type="image/webp" srcset="bilder/packdas-team-wien-sm.webp 600w, bilder/packdas-team-wien-lg.webp 1200w" sizes="(max-width: 768px) 100vw, 600px"><img src="bilder/packdas-team-wien.jpg" alt="Drei Mitarbeiter des packdas!-Teams in Arbeitskleidung – Umzug &amp; Übersiedlung Wien" width="1400" height="933" loading="eager" fetchpriority="high" decoding="async"></picture></figure>
+            <figure class="tile big"><picture><source type="image/webp" srcset="bilder/packdas-kasten-verladen-transporter-sm.webp 600w, bilder/packdas-kasten-verladen-transporter-lg.webp 1200w" sizes="(max-width: 768px) 100vw, 430px"><img src="bilder/packdas-kasten-verladen-transporter.jpg" alt="packdas!-Team verlädt ein Kastenelement in den Transporter – Umzug &amp; Übersiedlung Wien" width="1400" height="933" loading="lazy" decoding="async"></picture></figure>
         </div>
-    </section>
+    </header>
 
     <section>
         <div class="section-inner content-block reveal">
@@ -497,7 +497,7 @@ footer ul a:hover { color: var(--color-accent); }
     <footer role="contentinfo">
         <div class="footer-inner">
             <div class="footer-brand">
-                <a href="index.html" class="nav-logo">packdas!</a>
+                <a href="index.html" class="nav-logo">packdas<span class="logo-mark">!</span></a>
                 <p>Ihr zuverlässiges Umzugs- und Entrümpelungsunternehmen in Wien. 24/7 verfügbar, alle 23 Bezirke. Seit 2020.</p>
                 <div class="footer-social">
                     <a href="https://www.facebook.com/share/1DLyRE2VRR/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
