@@ -15,9 +15,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" as="image" type="image/webp" imagesrcset="bilder/packdas-team-wien-sm.webp 600w, bilder/packdas-team-wien-lg.webp 1200w" imagesizes="(max-width: 768px) 60vw, 520px" fetchpriority="high">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MovingCompany", "name": "packdas!", "url": "https://packdas.at", "telephone": "+436766064470", "email": "office@packdas.at", "address": {"@type": "PostalAddress", "streetAddress": "Burghardtgasse 21/12", "postalCode": "1200", "addressLocality": "Wien", "addressCountry": "AT"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "00:00", "closes": "23:59"}], "priceRange": "€€", "logo": "https://packdas.at/favicon.png", "image": "https://packdas.at/bilder/packdas-moebelpacker-lkw-wien.jpg", "areaServed": {"@type": "City", "name": "Wien"}, "sameAs": ["https://www.google.com/maps?cid=11234201469434106058", "https://www.reddit.com/r/wien/comments/1osr5ei/habt_ihr_tipps_f%C3%BCr_eine_verl%C3%A4ssliche_umzugsfirma/"], "hasMap": "https://www.google.com/maps?cid=11234201469434106058"}</script>
     <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -340,6 +339,8 @@ footer ul a:hover { color: var(--color-accent); }
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Entrümpelung & Räumung Floridsdorf", "alternateName": "Räumung Floridsdorf", "serviceType": "Entrümpelung", "provider": {"@type": "MovingCompany", "name": "packdas!", "url": "https://packdas.at"}, "areaServed": {"@type": "AdministrativeArea", "name": "1210 Wien-Floridsdorf"}, "offers": {"@type": "Offer", "price": "120", "priceCurrency": "EUR"}, "url": "https://packdas.at/entruempelung-wien-1210"}</script>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://packdas.at/"}, {"@type": "ListItem", "position": 2, "name": "Entrümpelung & Räumung Wien", "item": "https://packdas.at/entruempelung-wien"}, {"@type": "ListItem", "position": 3, "name": "Entrümpelung & Räumung Floridsdorf", "item": "https://packdas.at/entruempelung-wien-1210"}]}</script>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Was kostet eine Entrümpelung in 1210 Wien-Floridsdorf?", "acceptedAnswer": {"@type": "Answer", "text": "Der Preis hängt von Menge, Stockwerk und Zugang ab. Startpreise siehe Tabelle; den Festpreis bekommen Sie per WhatsApp in wenigen Minuten."}}, {"@type": "Question", "name": "Machen Sie bei einem Reihenhaus eine Räumung oder eine Entrümpelung?", "acceptedAnswer": {"@type": "Answer", "text": "Beides ist möglich. Bei einer Räumung wird das ganze Haus samt Keller und Dachboden leer übergeben, bei einer Entrümpelung nur die gewünschten Bereiche. Der Festpreis richtet sich nach Ihren Fotos."}}, {"@type": "Question", "name": "Entrümpeln Sie auch Keller und Dachboden im Einfamilienhaus?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Wir leeren beides und entsorgen alles fachgerecht, auch Sperriges und Altmöbel."}}, {"@type": "Question", "name": "Räumen Sie Kleingartenhäuser samt Schuppen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Wir räumen Gartenhaus, Schuppen und Geräteraum und entsorgen umweltgerecht. Fotos genügen für den Festpreis."}}, {"@type": "Question", "name": "Muss ich selbst zum Mistplatz fahren?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Wir übernehmen Abtransport und Entsorgung komplett. Über den Mistplatz der MA 48 müssen Sie sich nicht kümmern."}}]}</script>
+    <link rel="stylesheet" href="/assets/site.css">
+    <!-- design-c -->
 </head>
 <body>
     <div class="announcement-bar" role="banner">
@@ -351,7 +352,7 @@ footer ul a:hover { color: var(--color-accent); }
     </div>
     <nav class="nav" id="navbar" role="navigation" aria-label="Hauptnavigation">
         <div class="nav-inner">
-            <a href="index.html" class="nav-logo">packdas!</a>
+            <a href="index.html" class="nav-logo">packdas<span class="logo-mark">!</span></a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="umzug-wien.html">Umzug</a></li>
                 <li><a href="entruempelung-wien.html">Entrümpelung</a></li>
@@ -375,14 +376,12 @@ footer ul a:hover { color: var(--color-accent); }
                 <a href="tel:+436766064470" class="btn btn-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Jetzt anrufen</a>
             </div>
         </div>
-    </header>
-
-    <section style="padding:2rem 0 0;">
-        <div class="team-banner">
-            <img src="bilder/packdas-team-wien.jpg" alt="Drei Mitarbeiter des packdas!-Teams in Arbeitskleidung – Entrümpelung 1210 Wien (Floridsdorf)" width="1400" height="933" loading="lazy">
-            <img src="bilder/packdas-moebelpacker-kasten-tragen.jpg" alt="Zwei packdas!-Möbelpacker tragen einen in Folie verpackten Kasten zum Transporter – Entrümpelung 1210 Wien (Floridsdorf)" width="900" height="1350" loading="lazy">
+    
+        <div class="hero-bento duo">
+            <figure class="tile big"><picture><source type="image/webp" srcset="bilder/packdas-team-wien-sm.webp 600w, bilder/packdas-team-wien-lg.webp 1200w" sizes="(max-width: 768px) 60vw, 520px"><img src="bilder/packdas-team-wien.jpg" alt="Drei Mitarbeiter des packdas!-Teams in Arbeitskleidung – Entrümpelung 1210 Wien (Floridsdorf)" width="1400" height="933" loading="eager" fetchpriority="high" decoding="async"></picture></figure>
+            <figure class="tile tall"><picture><source type="image/webp" srcset="bilder/packdas-moebelpacker-kasten-tragen-sm.webp 600w, bilder/packdas-moebelpacker-kasten-tragen-lg.webp 900w" sizes="(max-width: 768px) 40vw, 360px"><img src="bilder/packdas-moebelpacker-kasten-tragen.jpg" alt="Zwei packdas!-Möbelpacker tragen einen in Folie verpackten Kasten zum Transporter – Entrümpelung 1210 Wien (Floridsdorf)" width="900" height="1350" loading="lazy" decoding="async"></picture></figure>
         </div>
-    </section>
+    </header>
 
     <section>
         <div class="section-inner content-block reveal">
@@ -472,7 +471,7 @@ footer ul a:hover { color: var(--color-accent); }
     <footer role="contentinfo">
         <div class="footer-inner">
             <div class="footer-brand">
-                <a href="index.html" class="nav-logo">packdas!</a>
+                <a href="index.html" class="nav-logo">packdas<span class="logo-mark">!</span></a>
                 <p>Ihr zuverlässiges Umzugs- und Entrümpelungsunternehmen in Wien. 24/7 verfügbar, alle 23 Bezirke. Seit 2020.</p>
                 <div class="footer-social">
                     <a href="https://www.facebook.com/share/1DLyRE2VRR/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
