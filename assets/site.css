@@ -128,9 +128,9 @@ section { padding: 5.5rem 1.5rem; }
 .why-item p { color: var(--color-text-muted); }
 
 /* Teamfoto im „Warum packdas!“-Abschnitt (Startseite) */
-.why-photo { max-width: 1100px; margin: 0 auto 2.5rem; border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 21 / 9; background: var(--color-surface); }
-.why-photo picture, .why-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
-@media (max-width: 768px) { .why-photo { aspect-ratio: 3 / 2; border-radius: 20px; margin-bottom: 1.75rem; } }
+.why-photo { max-width: 920px; margin: 0 auto 2.5rem; border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 3 / 2; background: var(--color-surface); }
+.why-photo picture, .why-photo img { display: block; width: 100%; height: 100%; object-fit: contain; }
+@media (max-width: 768px) { .why-photo { border-radius: 20px; margin-bottom: 1.75rem; } }
 
 /* Bezirke / Nachbar-Links */
 .bezirk-link { border: 0; border-radius: 16px; background: var(--color-surface); box-shadow: var(--shadow-md); color: var(--color-primary); }
@@ -231,3 +231,8 @@ footer ul a:hover, .footer-bottom a:hover { color: var(--color-primary); }
 
 /* Fix 26.10.2026: Inhalte nie verstecken – lange Textblöcke erreichten die 15-%-Schwelle am Handy nie und blieben unsichtbar */
 .reveal, .reveal.visible { opacity: 1 !important; transform: none !important; transition: none !important; }
+
+/* Team-Fotos (Über uns): ganze Personen, Gesichter nie abschneiden */
+.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 800px; margin: 0 auto; align-items: start; }
+.team-img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; border-radius: 12px; object-fit: cover; object-position: center 20%; }
+@media (max-width: 640px) { .team-grid { grid-template-columns: 1fr; max-width: 340px; gap: 1.5rem; } }
