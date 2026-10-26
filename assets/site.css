@@ -228,3 +228,6 @@ footer ul a:hover, .footer-bottom a:hover { color: var(--color-primary); }
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
 }
+
+/* Fix 26.10.2026: Inhalte nie verstecken – lange Textblöcke erreichten die 15-%-Schwelle am Handy nie und blieben unsichtbar */
+.reveal, .reveal.visible { opacity: 1 !important; transform: none !important; transition: none !important; }
