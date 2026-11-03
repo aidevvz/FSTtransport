@@ -118,8 +118,8 @@ section { padding: 5.5rem 1.5rem; }
 
 /* „Warum wir“ – hell statt dunkel */
 .why-section { background: var(--color-soft); color: var(--color-text); }
-.why-section .section-label { color: var(--color-accent-text); }
-.why-section .section-title { color: var(--color-primary); }
+.why-section .section-label { color: var(--color-accent-text) !important; }
+.why-section .section-title { color: var(--color-primary) !important; }
 .why-section .section-subtitle { color: var(--color-text-muted); }
 .why-item { background: var(--color-surface); }
 .why-item:hover { background: var(--color-surface); transform: translateY(-3px); }
