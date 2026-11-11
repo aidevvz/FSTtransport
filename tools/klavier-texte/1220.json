@@ -1,0 +1,28 @@
+{
+  "plz": "1220",
+  "bezirk": "Donaustadt",
+  "in_bezirk": "in der Donaustadt",
+  "intro": "Wer in der Donaustadt (1220 Wien) ein Klavier transportieren lässt, zieht oft in einen Neubau oder in ein Haus am Stadtrand. packdas! transportiert Pianinos, Klaviere und E-Pianos bis 250 kg im größten Bezirk Wiens. Das Team kommt mindestens zu zweit, polstert das Klavier mit Decken, trägt es mit Tragegurten und sichert es im eigenen Transporter stehend.",
+  "typisch_titel": "Typischer Klaviertransport in der Donaustadt",
+  "typisch": [
+    "Häufig zieht ein Klavier in der Donaustadt aus einer Wohnung in Kagran in einen Neubau in der Seestadt Aspern, einen Erstbezug mit Tiefgarage. Die Wege im Bezirk sind lang, deshalb rechnen wir Anfahrt und Fahrzeit zwischen den Adressen mit ein. In neuen Wohnanlagen gibt es oft eine Hausordnung für Lieferungen und für die Nutzung des Aufzugs.",
+    "Wir fragen darum vorab, wo vor dem Haus geladen werden darf und ob der Aufzug für den Transport reserviert werden kann. Im Erstbezug sind Böden und Wände neu, deshalb gehen wir dort besonders vorsichtig vor. Das Team schützt Böden und Wände mit Decken und trägt das Klavier mit Tragegurten an den gewünschten Platz. Sie sagen uns vor Ort, wo das Klavier stehen soll."
+  ],
+  "worauf_titel": "Worauf es beim Klaviertransport in der Donaustadt ankommt",
+  "worauf": "Die Donaustadt ist der flächenmäßig größte Bezirk Wiens. Um Kagran stehen größere Wohnanlagen und Gemeindebauten, die Seestadt Aspern ist ein junges Viertel mit Neubauten. In Hirschstetten, Essling und Breitenlee dagegen überwiegen Einfahrten, Siedlungen und Einfamilienhäuser mit Garten. Für ein Klavier bedeutet das: Im Neubau zählen Tiefgarage und Aufzug, in den Randlagen Zufahrt, Trageweg und die lange Anfahrt.",
+  "tipps": [
+    "Fragen Sie die Hausverwaltung nach der Einfahrtshöhe der Tiefgarage und ob der Aufzug reserviert werden kann.",
+    "Nennen Sie uns die Lage der Adresse im Bezirk, damit wir die Anfahrt einschätzen können.",
+    "Rechnen Sie bei Adressen in Essling oder Breitenlee mit einer längeren Fahrt zwischen den beiden Adressen."
+  ],
+  "faq": [
+    {
+      "q": "Was muss ich in der Donaustadt für einen Klaviertransport in einen Neubau in der Seestadt Aspern klären?",
+      "a": "Fragen Sie bei der Hausverwaltung nach der erlaubten Einfahrtshöhe der Tiefgarage, ob der Aufzug für den Transport reserviert werden kann und wo ein Fahrzeug zum Laden halten darf. Schicken Sie uns dazu ein Foto vom Weg zwischen Aufzug und Wohnungstür. Dann planen wir den Transport vorab."
+    },
+    {
+      "q": "Wie planen Sie in der Donaustadt die Anfahrt, wenn das Klavier in Essling oder Breitenlee steht?",
+      "a": "Die Donaustadt ist der flächenmäßig größte Bezirk Wiens, und Essling und Breitenlee liegen am Rand. Wir rechnen die Fahrzeit mit ein. Dort gibt es oft Einfahrten und Platz zum Laden, der Trageweg bleibt häufig kurz. Nennen Sie uns die Adresse und schicken Sie ein Foto vom Eingang."
+    }
+  ]
+}
